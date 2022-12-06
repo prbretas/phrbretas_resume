@@ -177,9 +177,13 @@ ul#nav li a {
 	-o-transition: color .2s ease-in-out;
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
-   filter: drop-shadow(0, 0 ,20px red);
+   /*filter: drop-shadow(0, 0 ,20px red);*/
 }
+ul#nav li a:hover {
+   color: rgb(125, 125, 125) ;
+   
 
+}
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #5fbfff; }
 
