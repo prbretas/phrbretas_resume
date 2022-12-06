@@ -958,12 +958,12 @@
 
                   <div>
                      <label for="contactName">Nome <span class="required">*</span></label>
-                     <input type="text" value="" size="35" id="contactName" name="contactName">
+                     <input type="text" value="" size="35" id="contactName" name="contactName" required>
                   </div>
 
                   <div>
                      <label for="contactEmail">Email <span class="required">*</span></label>
-                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail"  required>
                   </div>
 
                   <div>
@@ -973,12 +973,13 @@
 
                   <div>
                      <label for="contactMessage">Mensagem <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" style="resize: none;"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" style="resize: none;"  required></textarea>
                   </div>
 
-                  <div>
-                     <button class="submit" type="submit">Enviar</button>
-                     <span id="image-loader">
+                  <div id="div-btn">
+
+                     <input type="submit" value="Enviar" id="btn-form-enviar">
+                     <span id="image-loader" class="submit">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
