@@ -4,6 +4,7 @@
 <!--[if (gte IE 8)|!(IE)]><!-->
 <html class="no-js" lang="pt-br">
 <!--<![endif]-->
+
 <head>
    <!--- Basic Page Needs
    ================================================== -->
@@ -23,6 +24,8 @@
    <!-- Script
    ================================================== -->
    <script src="js/modernizr.js"></script>
+   <script src="./animations.js"></script>
+
    <!-- Favicons
 	================================================== -->
    <link rel="shortcut icon" href="./images/web-design.png">
@@ -37,19 +40,20 @@
          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">Sobre</a></li>
-            <li><a class="smoothscroll" href="#resume">Resumo</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Trabalhos</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Depoimentos</a></li>
-            <li><a class="smoothscroll" href="#contact">Contatos</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" title="Home">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="Sobre">Sobre</a></li>
+            <li><a class="smoothscroll" href="#resume" title="Resumo">Resumo</a></li>
+            <li><a class="smoothscroll" href="#portfolio" title="Trabalhos">Trabalhos</a></li>
+            <li><a class="smoothscroll" href="#testimonials" title="Outros">Outros</a></li>
+            <li><a class="smoothscroll" href="#contact" title="Contatos">Contatos</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline" style="margin-top:15px;">Olá, seja bem vindo. <br>Sou Philippe R. Bretas
+            <h1 id="titleMain" class="responsive-headline" style="margin-top:15px;">Olá, seja bem vindo. <br>Sou
+               Philippe R. Bretas
             </h1>
             <h3>Sou <span>Desenvolvedor WEB, </span><span>Gestor Administrativo </span>e <span>Estudante
                   FullStack</span>, participo do programa <span>StartTECH</span> da <span>TOTVS</span> e também do curso
@@ -93,7 +97,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic" src="images/profile.jpg" alt="" />
+            <img class="profile-pic" src="images/profile.jpg" alt="Imagem de Perfil" title="Imagem de perfil" />
 
          </div>
 
@@ -845,8 +849,8 @@
 
 
             <iframe width="300" height="300" src="https://www.youtube.com/embed/zI4J7Rn65cU"
-               style="border: 2px solid #fff; filter: drop-shadow(0px 0px 2px white);" title="YouTube video player - Em Chamas Caparaó Thrash - Way"
-               frameborder="0"
+               style="border: 2px solid #fff; filter: drop-shadow(0px 0px 2px white);"
+               title="YouTube video player - Em Chamas Caparaó Thrash - Way" frameborder="0"
                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                allowfullscreen></iframe>
          </div>
@@ -953,7 +957,7 @@
          <div class="eight columns">
 
             <!-- form -->
-            <form action="mailto:phrbretas@gmail.com" method="post" id="contactForm" name="contactForm">
+            <form action="mailto:phrbretas@gmail.com" method="get" id="contactForm" name="contactForm">
                <fieldset>
 
                   <div>
@@ -963,7 +967,7 @@
 
                   <div>
                      <label for="contactEmail">Email <span class="required">*</span></label>
-                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail"  required>
+                     <input type="email" value="" size="35" id="contactEmail" name="contactEmail" required>
                   </div>
 
                   <div>
@@ -973,7 +977,8 @@
 
                   <div>
                      <label for="contactMessage">Mensagem <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" style="resize: none;"  required></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" style="resize: none;"
+                        required id="mensagemArea"></textarea>
                   </div>
 
                   <div id="div-btn">
@@ -996,11 +1001,9 @@
             </div>
 
          </div>
-
-
          <aside class="four columns footer-widgets">
 
-            <div class="widget widget_contact">
+            <div class="widget widget_contact" style="text-align: center;">
 
                <h4>Endereço e Telefone</h4>
                <p class="address">
@@ -1014,13 +1017,14 @@
             </div>
 
             <div class="widget widget_tweets">
+               <h3 style="color: white; text-align: center;">Algumas curiosidades</h3>
 
-               <h4 class="widget-title">Em Chamas - Way</h4>
+               <h4 class="widget-title" style="text-align: center;">Em Chamas - Way</h4>
 
                <ul id="twitter">
 
                   <li><iframe width="300" height="300" src="https://www.youtube.com/embed/zI4J7Rn65cU"
-                        style="border: 1px solid #fff; filter: drop-shadow(0px 0px 2px white);"
+                        style="border: 1px solid #fff; filter: drop-shadow(0px 0px 2px white); align-self: right;"
                         title="YouTube video player - Em Chamas Caparaó Thrash - Way" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe></li>
@@ -1034,7 +1038,8 @@
                            Músicas.
                            <br>
                            Você pode acessar o
-                           <a href="https://www.youtube.com/@EMCHAMASCAPARAOTHRASH" target="_blank" title="Acesse aqui o YouTube">YouTube
+                           <a href="https://www.youtube.com/@EMCHAMASCAPARAOTHRASH" target="_blank"
+                              title="Acesse aqui o YouTube">YouTube
                               aqui</a></span>
                         <em>Lançado em 24 Agosto 2019</em>
                      </p>
@@ -1049,7 +1054,8 @@
 
                      <a href="https://open.spotify.com/album/7M5TBOThXCVLKgMcrAVKHW">
                         <img style="border: 1px solid #fff;filter: drop-shadow(0px 0px 2px white)"
-                           src="https://i.scdn.co/image/ab67616d0000b2735060a21bacdda42620a78e46" alt="Capa do Single Burn In The Sky" title="Burn In The Sky">
+                           src="https://i.scdn.co/image/ab67616d0000b2735060a21bacdda42620a78e46"
+                           alt="Capa do Single Burn In The Sky" title="Burn In The Sky">
                      </a>
 
                   </li>
@@ -1132,6 +1138,8 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="./animations.js"></script>
+
 
 </body>
 
