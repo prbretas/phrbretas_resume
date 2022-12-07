@@ -180,7 +180,9 @@ ul#nav li a {
    /*filter: drop-shadow(0, 0 ,20px red);*/
 }
 ul#nav li a:hover {
-   color: rgb(125, 125, 125) ;
+   color: rgb(216, 216, 216) ;
+   filter: drop-shadow(1px 1px 1px rgb(22, 22, 22));
+   transition: 0.5s;
    
 
 }
