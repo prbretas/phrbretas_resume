@@ -298,6 +298,7 @@ ul#nav li.current a { color: #5fbfff; }
 	float: left;
 	padding: 0;
 	text-align: left;
+   margin-bottom: 10px;
 }
 .bars .skills {
   	margin-top: 36px;
@@ -333,30 +334,30 @@ ul#nav li.current a { color: #5fbfff; }
    border-radius: 3px 0 0 3px;
 }
 
-.javascript {
+.frontend {
+  	width: 80%;
+  	-moz-animation: frontend 2s ease;
+  	-webkit-animation: frontend 2s ease;
+}
+.backend {
   	width: 70%;
-  	-moz-animation: javascript 2s ease;
-  	-webkit-animation: javascript 2s ease;
+  	-moz-animation: backend 2s ease;
+  	-webkit-animation: backend 2s ease;
 }
-.bootstrap {
+.frameworkss {
   	width: 60%;
-  	-moz-animation: bootstrap 2s ease;
-  	-webkit-animation: bootstrap 2s ease;
+  	-moz-animation: frameworkss 2s ease;
+  	-webkit-animation: frameworkss 2s ease;
 }
-.reactnative {
+.sqlbd {
+  	width: 50%;
+  	-moz-animation: sqlbd 2s ease;
+  	-webkit-animation: sqlbd 2s ease;
+}
+.mobile {
   	width: 60%;
-  	-moz-animation: reactnative 2s ease;
-  	-webkit-animation: reactnative 2s ease;
-}
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	width: 90%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;github
+  	-moz-animation: mobile 2s ease;
+  	-webkit-animation: mobile 2s ease;
 }
 .github {
   	width: 70%;
@@ -364,50 +365,50 @@ ul#nav li.current a { color: #5fbfff; }
   	-webkit-animation: github 2s ease;
 }
 
-@-moz-keyframes javascript {
+@-moz-keyframes frontend {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes backend {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-@-moz-keyframes bootstrap {
+@-moz-keyframes frameworkss {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes reactnative {
+@-moz-keyframes sqlbd {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes mobile {
   0%   { width: 0px;  }
   100% { width: 60%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
 }
 @-moz-keyframes github {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
 
-@-webkit-keyframes javascript {
+@-webkit-keyframes frontend {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes backend {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-@-webkit-keyframes bootstrap {
+@-webkit-keyframes frameworkss {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes reactnative {
+@-webkit-keyframes sqlbd {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes mobile {
   0%   { width: 0px;  }
   100% { width: 60%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
 }
 @-webkit-keyframes github {
   0%   { width: 0px;  }
@@ -650,14 +651,13 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url("https://images.unsplash.com/photo-1614179924047-e1ab49a0a0cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9seXxlbnwwfHwwfHw%3D&w=1000&q=80") no-repeat center center;
+   background: #1F1F1F url(../images/bg2.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
-
    position: relative;
    min-height: 200px;
-   width: 100%;
+   width: 100vw;
    overflow: hidden;
 }
 #testimonials .text-container {
