@@ -646,6 +646,12 @@ call-to-action .button {
 	color: #D8D8D8;
 }
 
+
+#wayclipe{
+width:280px;
+height: 250px;
+}
+
 /* ------------------------------------------------------------------
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
@@ -1015,3 +1021,10 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+#aside-col{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+}
