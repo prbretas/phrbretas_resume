@@ -340,7 +340,7 @@ ul#nav li.current a { color: #5fbfff; }
   	-webkit-animation: frontend 2s ease;
 }
 .backend {
-  	width: 70%;
+  	width: 80%;
   	-moz-animation: backend 2s ease;
   	-webkit-animation: backend 2s ease;
 }
@@ -350,7 +350,7 @@ ul#nav li.current a { color: #5fbfff; }
   	-webkit-animation: frameworkss 2s ease;
 }
 .sqlbd {
-  	width: 50%;
+  	width: 70%;
   	-moz-animation: sqlbd 2s ease;
   	-webkit-animation: sqlbd 2s ease;
 }
@@ -371,7 +371,7 @@ ul#nav li.current a { color: #5fbfff; }
 }
 @-moz-keyframes backend {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes frameworkss {
   0%   { width: 0px;  }
@@ -379,7 +379,7 @@ ul#nav li.current a { color: #5fbfff; }
 }
 @-moz-keyframes sqlbd {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes mobile {
   0%   { width: 0px;  }
@@ -396,7 +396,7 @@ ul#nav li.current a { color: #5fbfff; }
 }
 @-webkit-keyframes backend {
   0%   { width: 0px;  }
-  100% { width: 70%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes frameworkss {
   0%   { width: 0px;  }
@@ -404,7 +404,7 @@ ul#nav li.current a { color: #5fbfff; }
 }
 @-webkit-keyframes sqlbd {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes mobile {
   0%   { width: 0px;  }
