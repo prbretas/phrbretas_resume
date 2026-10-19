@@ -218,6 +218,7 @@ table {
 html {
    font-size: 62.5%;
    -webkit-font-smoothing: antialiased;
+   background: #252531;
 }
 
 body {
@@ -316,10 +317,9 @@ p.lead {
 }
 
 #home {
-   background-image: url(../images/background-main.jpg);
+   background-image: url(../images/bg-main.png);
    background-position: bottom center;
    background-repeat: no-repeat;
-
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
